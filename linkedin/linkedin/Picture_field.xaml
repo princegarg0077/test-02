@@ -1,0 +1,17 @@
+﻿<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="linkedin.Picture_field">
+    <StackLayout>
+
+        <Image x:Name="ChosenImage" Aspect="AspectFit" HeightRequest="300" />
+        <Editor x:Name="CaptionEditor" TextChanged="TextEditor" Placeholder="Enter caption and hashtags" />
+        <Button Text="Choose/Click a picture" Clicked="ChoosePictureButton_Clicked" BackgroundColor="Black" TextColor="White" Margin="30,0,30,20"/>
+        <Button Text="Submit button" Clicked="Submit_button" BackgroundColor="Black" TextColor="White" Margin="30,0,30,0"/>
+
+
+    </StackLayout>
+    
+</ContentPage>

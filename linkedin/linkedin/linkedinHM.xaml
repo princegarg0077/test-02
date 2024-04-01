@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="linkedin.linkedinHM">
+    <ContentPage.Content>
+        <StackLayout>
+            <WebView x:Name="webView"                   
+                     Navigated="WebView_Navigated"
+                     VerticalOptions="FillAndExpand"
+                     HorizontalOptions="FillAndExpand"/>
+            
+            <Button Text="Login with LinkedIn" Clicked="Login_button" BackgroundColor="Black" TextColor="White" Margin="20,0,20,10"/>
+            <!--<Button Text="Click picture" Clicked="Picture_Clicked" BackgroundColor="Black" TextColor="White" Margin="20,0,20,10"></Button>-->
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
